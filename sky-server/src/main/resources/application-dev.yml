@@ -11,5 +11,9 @@ sky:
     access-key-id: LTAI5tBrc4sSjsuEnKk5vVGr
     access-key-secret: 7ssDexvYbQViLsjcKvRS9Ibd2jRQDu
     bucket-name: theodore19991107
-
+  redis:
+    host: localhost
+    port: 6379
+    password: 123456
+    database: 0
 
