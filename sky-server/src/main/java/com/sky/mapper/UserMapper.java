@@ -9,6 +9,7 @@ public interface UserMapper {
 
     /**
      * 根据openid查询用户
+     *
      * @param openid
      * @return
      */
@@ -17,8 +18,17 @@ public interface UserMapper {
 
     /**
      * 插入用户数据
+     *
      * @param user
      */
     void insert(User user);
 
+    /**
+     * 根据userId查询用户
+     *
+     * @param userId
+     * @return
+     */
+    @Select("select * from user where id = #{userId}")
+    User getById(Long userId);
 }
